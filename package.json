@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.4",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "my-portfolio-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CalinRaduAlexandru/My-portfolio-api.git"
+  },
+  "author": "Radu Călin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalinRaduAlexandru/My-portfolio-api/issues"
+  },
+  "homepage": "https://github.com/CalinRaduAlexandru/My-portfolio-api#readme",
+  "description": ""
+}
