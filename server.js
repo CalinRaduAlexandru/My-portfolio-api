@@ -11,30 +11,10 @@ const db = knex({
   },
 });
 
-db.select("*")
-  .from("messages")
-  .then((data) => {
-    console.log(data);
-  });
-//
-// process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
-//
-// const db = knex({
-//   client: "pg",
-//   connection: {
-//     connectionString: process.env.DATABASE_URL,
-//     ssl: true,
-//   },
-// });
-
 const app = express();
 
 app.use(cors());
-app.use(express.json());
-
-app.get("/", (req, res) => {
-  console.log();
-});
+app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   db("messages")
